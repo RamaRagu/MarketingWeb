@@ -8,14 +8,13 @@ const Home = () => {
     <>
       <div className="container">
         {/* Video Section */}
-        <div className="grid grid-cols-1 min-h-[500px] flex justify-center items-center mb-10">
+        <div className="grid grid-cols-1 min-h-[500px] flex justify-center items-center mb-10 px-4 md:px-8 lg:px-16 py-6 md:py-10">
           <div className="w-full md:w-[100%] lg:w-[100%] aspect-w-16 aspect-h-9 flex justify-center">
             <motion.video
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.7 }}
               autoPlay
-              muted
               loop
               playsInline
               className="w-full h-auto rounded-xl shadow-xl"

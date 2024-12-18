@@ -31,11 +31,11 @@ const Navbar = () => {
       variants={slideBottom(0.2)}
       initial="initial"
       animate="animate"
-      className="bg-dark-blue text-0D1556 py-2 shadow-md"
+      className="bg-dark-blue text-0D1556 py-4 shadow-md"
     >
       <div className="container flex justify-between items-center">
         <div className="flex items-center gap-2">
-          <img src={Logo} alt="MindMend Logo" className="w-10 h-10" />
+          <img src={Logo} alt="MindMend Logo" className="w-12 h-12" />
           <h1 className="text-2xl font-bold">MindMend</h1>
         </div>
         <ul className="flex gap-6">
