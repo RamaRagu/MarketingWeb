@@ -1,9 +1,9 @@
 import React from "react";
-import HeroImg from "../../assets/1.png";
+import HeroImg from "../../assets/marketing/market/1.png";
 import { motion } from "framer-motion";
 import { slideUp } from "../../utility/animation";
 
-const Hero = () => {
+const Home = () => {
   return (
     <>
       <div className="container">
@@ -14,18 +14,23 @@ const Hero = () => {
               variants={slideUp(0.2)}
               initial="initial"
               animate="animate"
-              className="text-4xl xl:text-5xl font-bold"
+              className="text-4xl xl:text-5xl font-bold text-black"
             >
-              Unlock a Passion, Side Hustle, or New{" "}
-              <span className="text-gray-400 underline">Profession</span>
+              Therapy is not just treatment, <br />
+              it's a journey of growth.{" "}
+              <span className="text-gray-400 underline">
+                Empower the future
+              </span>
             </motion.h1>
             <motion.p
               variants={slideUp(0.5)}
               initial="initial"
               animate="animate"
+              className="text-lg text-black/80"
             >
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Dignissimos eligendi mollitia{" "}
+              MindMend is here to support children with autism and empower their
+              families through personalized care, advanced AI therapy, and
+              seamless tracking.
             </motion.p>
             <motion.button
               variants={slideUp(0.8)}
@@ -33,7 +38,7 @@ const Hero = () => {
               animate="animate"
               className="primary-btn bg-gray-900 hover:bg-primary duration-300"
             >
-              More News
+              Discover More
             </motion.button>
           </div>
           {/* Hero Image section */}
@@ -46,7 +51,7 @@ const Hero = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.5 }}
               src={HeroImg}
-              alt=""
+              alt="MindMend"
               className="w-[90%] md:w-[550px] xl:w-[600px]"
             />
           </div>
@@ -56,4 +61,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Home;

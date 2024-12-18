@@ -9,7 +9,7 @@ const bgStyle = {
   backgroundSize: "cover",
   backgroundPosition: "center",
 };
-const Email = () => {
+const ContactUs = () => {
   return (
     <div style={bgStyle}>
       <motion.div
@@ -35,4 +35,4 @@ const Email = () => {
   );
 };
 
-export default Email;
+export default ContactUs;

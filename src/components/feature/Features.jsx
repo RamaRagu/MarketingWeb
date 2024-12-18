@@ -1,11 +1,11 @@
 import React from "react";
-import Img1 from "../../assets/icon/1.png";
-import Img2 from "../../assets/icon/2.png";
-import Img3 from "../../assets/icon/3.png";
+import Img1 from "../../assets/marketing/3.png";
+import Img2 from "../../assets/marketing/1.png";
+import Img3 from "../../assets/marketing/2.png";
 import { slideUp } from "../../utility/animation";
 import { motion } from "framer-motion";
 
-const Cards = () => {
+const Features = () => {
   return (
     <>
       <div className="bg-gray-50">
@@ -19,14 +19,13 @@ const Cards = () => {
             >
               <img
                 src={Img1}
-                alt=""
-                className="w-16 h-16 rounded-full object-contain p-3 bg-black"
+                alt="AI-Based Speech Therapy"
+                className="w-25 h-25 rounded-full object-contain p-3 bg-grey-20"
               />
-              <p className="text-xl font-semibold">About</p>
+              <p className="text-xl font-semibold">AI-Based Speech Therapy</p>
               <p className="text-sm text-black/80 leading-relaxed">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-                voluptatem, aspernatur tempore doloribus voluptatum ex magnam
-                accus
+                Empowering children with autism through AI-driven speech
+                therapy, enhancing communication and social interaction skills.
               </p>
               <a href="#">Learn More</a>
             </motion.div>
@@ -38,14 +37,13 @@ const Cards = () => {
             >
               <img
                 src={Img2}
-                alt=""
-                className="w-16 h-16 rounded-full object-contain p-3 bg-black"
+                alt="Tracker"
+                className="w-25 h-25 rounded-full object-contain p-3 bg-grey-20"
               />
-              <p className="text-xl font-semibold">Connection</p>
+              <p className="text-xl font-semibold">Tracker</p>
               <p className="text-sm text-black/80">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-                voluptatem, aspernatur tempore doloribus voluptatum ex magnam
-                accus
+                Keep track of your child's progress with personalized reminders,
+                activity tracking, and autism severity assessments.
               </p>
               <a href="#">Learn More</a>
             </motion.div>
@@ -57,14 +55,13 @@ const Cards = () => {
             >
               <img
                 src={Img3}
-                alt=""
-                className="w-16 h-16 rounded-full object-contain p-3 bg-black"
+                alt="Chatbot"
+                className="w-25 h-25 rounded-full object-contain p-3 bg-grey-20"
               />
-              <p className="text-xl font-semibold">Plugin</p>
+              <p className="text-xl font-semibold">Chatbot</p>
               <p className="text-sm text-black/80">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-                voluptatem, aspernatur tempore doloribus voluptatum ex magnam
-                accus
+                An intelligent chatbot that helps assess the severity of autism
+                and assists caregivers in providing better support.
               </p>
               <a href="#">Learn More</a>
             </motion.div>
@@ -75,4 +72,4 @@ const Cards = () => {
   );
 };
 
-export default Cards;
+export default Features;

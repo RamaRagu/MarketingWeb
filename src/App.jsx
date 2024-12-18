@@ -1,23 +1,23 @@
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
-import Hero from "./components/Hero/Hero";
-import Services from "./components/Services/Services";
+import Home from "./components/Home/Home";
+import Team from "./components/team/Team";
 import Banner from "./components/Banner/Banner";
-import Cards from "./components/Cards/Cards";
+import Features from "./components/feature/Features";
 import Banner2 from "./components/Banner/Banner2";
-import Email from "./components/Email/Email";
+import ContactUs from "./components/Email/ContactUs";
 
 const App = () => {
   return (
-    <main className="overflow-x-hidden">
+    <div className="bg-light-blue text-dark-gray">
       <Navbar />
-      <Hero />
-      <Services />
-      <Banner />
-      <Cards />
+      <Home />
       <Banner2 />
-      <Email />
-    </main>
+      <Features />
+      <Banner />
+      <Team />
+      <ContactUs />
+    </div>
   );
 };
 

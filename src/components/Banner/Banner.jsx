@@ -1,5 +1,5 @@
 import React from "react";
-import BannerImg from "../../assets/3.png";
+import BannerImg from "../../assets/marketing/market/3.png";
 import { motion } from "framer-motion";
 import { slideUp } from "../../utility/animation";
 
@@ -16,17 +16,18 @@ const Banner = () => {
               whileInView="animate"
               className="text-4xl xl:text-5xl font-semibold text-black/80"
             >
-              Design is not what it looks like and feels like. Design is how{" "}
-              <br />
-              <span className="text-gray-400 underline">It Works</span>
+              Unlocking the potential within, one step at a time.{" "}
+              <span className="text-gray-400 underline">
+                Empower every child
+              </span>
             </motion.h1>
             <motion.button
               variants={slideUp(0.4)}
               initial="initial"
               whileInView="animate"
-              className="primary-btn hover:bg-black  text-black hover:text-white duration-300"
+              className="primary-btn hover:bg-black text-black hover:text-white duration-300"
             >
-              More News
+              Learn More
             </motion.button>
             <div className="flex gap-3">
               <motion.div
@@ -35,8 +36,11 @@ const Banner = () => {
                 whileInView="animate"
                 className="space-y-2"
               >
-                <p className="font-semibold text-lg">Design Tools</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                <p className="font-semibold text-lg">AI-Powered Support</p>
+                <p>
+                  Transforming how we understand and nurture children with
+                  autism.
+                </p>
               </motion.div>
               <motion.div
                 variants={slideUp(0.8)}
@@ -44,8 +48,10 @@ const Banner = () => {
                 whileInView="animate"
                 className="space-y-2"
               >
-                <p className="font-semibold text-lg">Design Tools</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                <p className="font-semibold text-lg">Personalized Growth</p>
+                <p>
+                  Empowering families with insights for meaningful progress.
+                </p>
               </motion.div>
             </div>
           </div>
@@ -59,7 +65,7 @@ const Banner = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.5 }}
               src={BannerImg}
-              alt=""
+              alt="MindMend"
               className="w-[90%] md:w-[550px] xl:w-[600px] md:!scale-125"
             />
           </div>

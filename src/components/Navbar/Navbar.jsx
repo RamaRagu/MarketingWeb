@@ -7,66 +7,48 @@ const NavbarLinks = [
   {
     id: 1,
     title: "Home",
-    link: "/",
+    link: "./components/Hero/Home",
   },
   {
     id: 2,
     title: "Features",
-    link: "#",
+    link: "./components/Cards/Features",
   },
   {
     id: 3,
-    title: "Shop",
-    link: "#",
+    title: "Team",
+    link: "./components/Services/Team",
   },
   {
     id: 4,
-    title: "About us",
-    link: "#",
-  },
-  {
-    id: 5,
     title: "Contact",
-    link: "#",
+    link: "./components/Email/ContactUs",
   },
 ];
 const Navbar = () => {
   return (
-    <>
-      <motion.div
-        variants={slideBottom(0.2)}
-        initial="initial"
-        animate="animate"
-        className="py-8 container flex justify-between items-center"
-      >
-        {/* Logo section */}
-        <div className="flex items-center gap-1">
-          <img src={Logo} alt="" className="w-[70px]" />
-          <p className="font-bold text-2xl">HUSTLE</p>
+    <motion.nav
+      variants={slideBottom(0.2)}
+      initial="initial"
+      animate="animate"
+      className="bg-dark-blue text-0D1556 py-2 shadow-md"
+    >
+      <div className="container flex justify-between items-center">
+        <div className="flex items-center gap-2">
+          <img src={Logo} alt="MindMend Logo" className="w-10 h-10" />
+          <h1 className="text-2xl font-bold">MindMend</h1>
         </div>
-        {/* Link section */}
-        <div className="hidden md:block">
-          <ul className="flex gap-3 xl:gap-7">
-            {NavbarLinks.map((link) => {
-              return (
-                <li key={link.id}>
-                  <a
-                    className="hover:text-primary uppercase text-sm xl:text-base"
-                    href={link.link}
-                  >
-                    {link.title}
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-        {/* Button section */}
-        <div>
-          <button className="primary-btn">Request For Quotes</button>
-        </div>
-      </motion.div>
-    </>
+        <ul className="flex gap-6">
+          {NavbarLinks.map((link) => (
+            <li key={link.id}>
+              <a href={link.link} className="hover:text-light-blue">
+                {link.title}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </motion.nav>
   );
 };
 
