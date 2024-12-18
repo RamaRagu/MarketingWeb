@@ -14,21 +14,13 @@ const Banner = () => {
               variants={slideUp(0.2)}
               initial="initial"
               whileInView="animate"
-              className="text-4xl xl:text-5xl font-semibold text-black/80"
+              className="text-4xl xl:text-5xl font-semibold text-dark-blue/80"
             >
               Unlocking the potential within, one step at a time.{" "}
               <span className="text-gray-400 underline">
                 Empower every child
               </span>
             </motion.h1>
-            <motion.button
-              variants={slideUp(0.4)}
-              initial="initial"
-              whileInView="animate"
-              className="primary-btn hover:bg-black text-black hover:text-white duration-300"
-            >
-              Learn More
-            </motion.button>
             <div className="flex gap-3">
               <motion.div
                 variants={slideUp(0.6)}
@@ -36,7 +28,9 @@ const Banner = () => {
                 whileInView="animate"
                 className="space-y-2"
               >
-                <p className="font-semibold text-lg">AI-Powered Support</p>
+                <p className="font-semibold text-lg text-dark-blue">
+                  AI-Powered Support
+                </p>
                 <p>
                   Transforming how we understand and nurture children with
                   autism.

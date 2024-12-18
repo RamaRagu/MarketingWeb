@@ -28,7 +28,7 @@ const Banner2 = () => {
               variants={slideUp(0.2)}
               initial="initial"
               whileInView="animate"
-              className="uppercase"
+              className="uppercase font-semibold text-dark-blue"
             >
               Tech addicts
             </motion.p>
@@ -36,18 +36,18 @@ const Banner2 = () => {
               variants={slideUp(0.4)}
               initial="initial"
               whileInView="animate"
-              className="text-4xl xl:text-5xl font-semibold text-black/80"
+              className="text-4xl xl:text-5xl font-semibold text-dark-blue/80"
             >
               They really understood our <br />
               <span className="text-gray-400 underline">Needs</span>
             </motion.h1>
             <motion.button
-              variants={slideUp(0.6)}
+              variants={slideUp(0.8)}
               initial="initial"
-              whileInView="animate"
-              className="primary-btn hover:bg-black  text-black hover:text-white duration-300"
+              animate="animate"
+              className="primary-btn bg-gray-900 hover:bg-primary duration-300"
             >
-              More News
+              More news
             </motion.button>
           </div>
         </div>

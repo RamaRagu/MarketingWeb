@@ -19,13 +19,12 @@ const ContactUs = () => {
       >
         <div className="space-y-4">
           <p className="text-3xl md:text-4xl font-bold">Join our email</p>
-          <p>Get 20% off per order</p>
         </div>
         <div className=" space-y-5">
-          <button className="primary-btn text-black">Subscribe</button>
+          <button className="primary-btn bg-gray-900 hover:bg-primary duration-300">
+            Subscribe
+          </button>
           <div className="flex flex-row justify-center gap-3">
-            <FaFacebook />
-            <FaTwitter />
             <FaInstagram />
             <FaLinkedin />
           </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
-import Team from "./components/team/Team";
+// import Team from "./components/team/Team";
 import Banner from "./components/Banner/Banner";
 import Features from "./components/feature/Features";
 import Banner2 from "./components/Banner/Banner2";
@@ -15,7 +15,7 @@ const App = () => {
       <Banner2 />
       <Features />
       <Banner />
-      <Team />
+      {/* <Team /> */}
       <ContactUs />
     </div>
   );
