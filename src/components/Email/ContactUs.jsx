@@ -25,8 +25,25 @@ const ContactUs = () => {
             Subscribe
           </button>
           <div className="flex flex-row justify-center gap-3">
-            <FaInstagram />
-            <FaLinkedin />
+            {/* Instagram Link */}
+            <a
+              href="https://www.instagram.com/mindmend74/profilecard/?igsh=MWs5dzMzandta3U0ag=="
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <FaInstagram className="text-gray-600 hover:text-blue-500" />
+            </a>
+
+            {/* LinkedIn Link */}
+            <a
+              href="https://www.linkedin.com/in/rama-raguram-2763a9292/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedin className="text-gray-600 hover:text-blue-500" />
+            </a>
           </div>
         </div>
       </motion.div>

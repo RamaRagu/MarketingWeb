@@ -1,6 +1,6 @@
 import React from "react";
-import Img1 from "../../assets/marketing/3.png";
-import Img2 from "../../assets/marketing/1.png";
+import Img1 from "../../assets/marketing/1.png";
+import Img2 from "../../assets/marketing/3.png";
 import Img3 from "../../assets/marketing/2.png";
 import { slideUp } from "../../utility/animation";
 import { motion } from "framer-motion";
@@ -20,7 +20,7 @@ const Features = () => {
               <img
                 src={Img1}
                 alt="AI-Based Speech Therapy"
-                className="w-25 h-25 rounded-full object-contain p-3 bg-grey-20 text-dark-blue"
+                className="w-25 h-25 object-contain p-3 bg-grey-20 text-dark-blue"
               />
               <p className="text-xl font-semibold text-dark-blue">
                 AI-Based Speech Therapy
@@ -40,7 +40,7 @@ const Features = () => {
               <img
                 src={Img2}
                 alt="Tracker"
-                className="w-25 h-25 rounded-full object-contain p-3 bg-grey-20 text-dark-blue"
+                className="w-15 h-15 object-contain p-3 bg-grey-20 text-dark-blue"
               />
               <p className="text-xl font-semibold text-dark-blue">Tracker</p>
               <p className="text-sm text-dark-blue/80">
@@ -58,7 +58,7 @@ const Features = () => {
               <img
                 src={Img3}
                 alt="Chatbot"
-                className="w-25 h-25 text-dark-blue rounded-full object-contain p-3 bg-grey-20"
+                className="w-25 h-25 object-contain p-3 bg-grey-20"
               />
               <p className="text-xl font-semibold text-dark-blue">Chatbot</p>
               <p className="text-sm text-dark-blue/80">

@@ -1,5 +1,5 @@
 import React from "react";
-import BannerImg from "../../assets/marketing/market/2.png";
+import BannerImg from "../../assets/marketing/market/2.svg";
 import { motion } from "framer-motion";
 import { slideUp } from "../../utility/animation";
 
@@ -19,7 +19,7 @@ const Banner2 = () => {
               transition={{ duration: 0.5, delay: 0.5 }}
               src={BannerImg}
               alt=""
-              className="w-[90%] md:w-[550px] xl:w-[600px] md:!scale-110"
+              className="w-[90%] md:w-[650px] xl:w-[600px] md:!scale-110"
             />
           </div>
           {/* Text content section */}

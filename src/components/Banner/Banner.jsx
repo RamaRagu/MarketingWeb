@@ -1,5 +1,5 @@
 import React from "react";
-import BannerImg from "../../assets/marketing/market/3.png";
+import BannerImg from "../../assets/marketing/market/3.svg";
 import { motion } from "framer-motion";
 import { slideUp } from "../../utility/animation";
 
@@ -60,7 +60,7 @@ const Banner = () => {
               transition={{ duration: 0.5, delay: 0.5 }}
               src={BannerImg}
               alt="MindMend"
-              className="w-[90%] md:w-[550px] xl:w-[600px] md:!scale-125"
+              className="w-[90%] md:w-[650px] xl:w-[700px] md:!scale-125"
             />
           </div>
         </div>
