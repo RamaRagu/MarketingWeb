@@ -7,6 +7,7 @@ import Banner from "./components/Banner/Banner";
 import Features from "./components/feature/Features";
 import Banner2 from "./components/Banner/Banner2";
 import ContactUs from "./components/Email/ContactUs";
+import Footer from "./components/Footer/footer";
 
 const SplashScreen = () => {
   const [loadingPercentage, setLoadingPercentage] = useState(0);
@@ -63,6 +64,7 @@ const App = () => {
           <Banner />
           {/* <Team /> */}
           <ContactUs />
+          <Footer />
         </>
       )}
     </div>

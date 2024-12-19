@@ -7,17 +7,17 @@ const NavbarLinks = [
   {
     id: 1,
     title: "Home",
-    link: "./components/Hero/Home",
+    link: "./components/Home/Home",
   },
   {
     id: 2,
     title: "Features",
-    link: "./components/Cards/Features",
+    link: "./components/features/Features",
   },
   {
     id: 3,
-    title: "Team",
-    link: "./components/Services/Team",
+    title: "News",
+    link: "./components/Banner/Banner",
   },
   {
     id: 4,

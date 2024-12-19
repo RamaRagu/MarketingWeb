@@ -42,7 +42,9 @@ const Features = () => {
                 alt="Tracker"
                 className="w-15 h-15 object-contain p-3 bg-grey-20 text-dark-blue"
               />
-              <p className="text-xl font-semibold text-dark-blue">Tracker</p>
+              <p className="text-xl font-semibold text-dark-blue">
+                Progress Tracker
+              </p>
               <p className="text-sm text-dark-blue/80">
                 Keep track of your child's progress with personalized reminders,
                 activity tracking, and autism severity assessments.
