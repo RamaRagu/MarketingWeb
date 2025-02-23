@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Logo from "./assets/1.png";
 import Home from "./components/Home/Home";
-// import Team from "./components/team/Team";
 import Banner from "./components/Banner/Banner";
 import Features from "./components/feature/Features";
 import Banner2 from "./components/Banner/Banner2";
 import ContactUs from "./components/Email/ContactUs";
 import Footer from "./components/Footer/footer";
+import Team from "./components/Team/Team"; // Import Team component
 
 const SplashScreen = () => {
   const [loadingPercentage, setLoadingPercentage] = useState(0);
@@ -19,7 +19,7 @@ const SplashScreen = () => {
         clearInterval(interval);
         return prev;
       });
-    }, 30); // Adjust speed of loading here
+    }, 30);
 
     return () => clearInterval(interval);
   }, []);
@@ -27,9 +27,7 @@ const SplashScreen = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-light-blue text-dark-gray">
       {loadingPercentage < 100 ? (
-        <>
-          <div className="text-4xl font-bold">Loading {loadingPercentage}%</div>
-        </>
+        <div className="text-4xl font-bold">Loading {loadingPercentage}%</div>
       ) : (
         <div className="text-center">
           <img src={Logo} alt="MindMend Logo" className="w-25 h-25" />
@@ -43,13 +41,24 @@ const SplashScreen = () => {
 const App = () => {
   const [showSplashScreen, setShowSplashScreen] = useState(true);
 
+  const homeRef = useRef(null);
+  const featuresRef = useRef(null);
+  const newsRef = useRef(null);
+  const contactRef = useRef(null);
+  const teamRef = useRef(null); // Add reference for Team section
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowSplashScreen(false);
     }, 4000);
-
     return () => clearTimeout(timer);
   }, []);
+
+  const scrollToSection = (ref) => {
+    if (ref?.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <div className="bg-light-blue text-dark-gray">
@@ -57,13 +66,26 @@ const App = () => {
         <SplashScreen />
       ) : (
         <>
-          <Navbar />
-          <Home />
-          <Banner2 />
-          <Features />
-          <Banner />
-          {/* <Team /> */}
-          <ContactUs />
+          <Navbar
+            scrollToSection={scrollToSection}
+            refs={{ homeRef, featuresRef, newsRef, contactRef, teamRef }} // Add teamRef to Navbar
+          />
+          <div ref={homeRef} id="home">
+            <Home />
+          </div>
+          <div ref={featuresRef} id="features">
+            <Banner2 />
+            <Features />
+          </div>
+          <div ref={newsRef} id="news">
+            <Banner />
+          </div>
+          <div ref={teamRef} id="team">
+            <Team /> {/* Add Team section here */}
+          </div>
+          <div ref={contactRef} id="contact">
+            <ContactUs />
+          </div>
           <Footer />
         </>
       )}

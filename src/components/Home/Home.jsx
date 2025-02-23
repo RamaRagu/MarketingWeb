@@ -9,7 +9,7 @@ const Home = () => {
       <div className="container">
         {/* Video Section */}
         <div className="grid grid-cols-1 min-h-[500px] flex justify-center items-center mb-10 py-6 md:py-10">
-          <div className="w-full md:w-[100%] lg:w-[100%] aspect-w-16 aspect-h-9 flex justify-center">
+          <div className="w-full aspect-w-9 aspect-h-16 md:aspect-w-16 md:aspect-h-9 flex justify-center">
             <motion.video
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}

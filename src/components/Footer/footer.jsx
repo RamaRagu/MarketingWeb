@@ -20,19 +20,19 @@ const Footer = () => {
           {/* Navigation Links */}
           <div className="flex space-x-8 text-sm">
             <a
-              href="../../components/Home/Home"
+              href="#home"
               className="text-white hover:text-blue-500 transition duration-200"
             >
               Home
             </a>
             <a
-              href="../../components/features/Features"
+              href="#features"
               className="text-white hover:text-blue-500 transition duration-200"
             >
               Features
             </a>
             <a
-              href="../../components/Email/ContactUs"
+              href="#contact"
               className="text-white hover:text-blue-500 transition duration-200"
             >
               Contact Us
