@@ -11,7 +11,7 @@ import { slideUp } from "../../utility/animation";
 const Team = () => {
   return (
     <div className="container py-20">
-      <h2 className="text-4xl font-bold text-center mb-10">
+      <h2 className="text-4xl font-bold text-center mb-">
         Meet the Minds Behind MindMend – A Passionate Team Dedicated to Autism
         Support and Innovation! 🚀💙
       </h2>
@@ -85,7 +85,7 @@ const Team = () => {
           </p>
         </motion.div>
         <motion.div
-          variants={slideUp(1.0)}
+          variants={slideUp(0.2)}
           initial="initial"
           whileInView="animate"
           className="bg-white shadow-xl rounded-xl px-5 py-10 text-center text-dark-blue flex flex-col justify-center items-center gap-5 md:max-w-[280px] mx-auto"
@@ -95,13 +95,15 @@ const Team = () => {
             alt="Team Member 5"
             className="w-32 h-32 rounded-full"
           />
-          <p className="text-xl font-semibold text-dark-blue">Shahana</p>
+          <p className="text-xl font-semibold text-dark-blue">
+            Shahana kuganesan
+          </p>
           <p className="text-sm text-dark-blue/80 leading-relaxed">
             Frontend Developer
           </p>
         </motion.div>
         <motion.div
-          variants={slideUp(1.2)}
+          variants={slideUp(0.2)}
           initial="initial"
           whileInView="animate"
           className="bg-white shadow-xl rounded-xl px-5 py-10 text-center text-dark-blue flex flex-col justify-center items-center gap-5 md:max-w-[280px] mx-auto"
@@ -111,7 +113,9 @@ const Team = () => {
             alt="Team Member 6"
             className="w-32 h-32 rounded-full"
           />
-          <p className="text-xl font-semibold text-dark-blue">Kerusan </p>
+          <p className="text-xl font-semibold text-dark-blue">
+            Kerusan Sribaskaran
+          </p>
           <p className="text-sm text-dark-blue/80 leading-relaxed">
             UIUX Designer
           </p>
