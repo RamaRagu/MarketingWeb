@@ -1,22 +1,12 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
-import FooterImg from "../../assets/5.png";
-
-const bgStyle = {
-  backgroundImage: `url(${FooterImg})`,
-  backgroundRepeat: "no-repeat",
-  backgroundSize: "cover",
-  backgroundPosition: "center",
-};
 
 const ContactUs = () => {
   useEffect(() => {
-    // Create a new script element
     const script = document.createElement("script");
     script.id = "mcjs";
     script.async = true;
-    // Insert the Mailchimp script inline
     script.innerHTML = `!function(c,h,i,m,p){
       m=c.createElement(h),
       p=c.getElementsByTagName(h)[0],
@@ -24,24 +14,22 @@ const ContactUs = () => {
       p.parentNode.insertBefore(m,p)
     }(document,"script","https://chimpstatic.com/mcjs-connected/js/users/0d5bb876c152f8b250435cda2/7c8dcce7b7f3a4c21c013f504.js");`;
 
-    // Append it to the body
     document.body.appendChild(script);
 
-    // Cleanup: remove the script when the component unmounts
     return () => {
       document.body.removeChild(script);
     };
   }, []);
 
   return (
-    <div style={bgStyle} className="py-16">
+    <div className="py-8 md:py-16 bg-cover bg-center">
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         whileInView={{ opacity: 1, scale: 1 }}
         className="container mx-auto px-4"
       >
-        <div className="max-w-md mx-auto bg-white rounded shadow p-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        <div className="max-w-md mx-auto bg-white rounded shadow p-4 md:p-6 text-center">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
             Subscribe to our newsletter!
           </h2>
           <p className="text-gray-600 mb-6">

@@ -1,10 +1,10 @@
 import React from "react";
-import TeamImg1 from "../../assets/team/1.png";
-import TeamImg2 from "../../assets/team/1.png";
-import TeamImg3 from "../../assets/team/1.png";
-import TeamImg4 from "../../assets/team/1.png";
-import TeamImg5 from "../../assets/team/1.png";
-import TeamImg6 from "../../assets/team/1.png";
+import TeamImg1 from "../../assets/team/1.jpg";
+import TeamImg2 from "../../assets/team/2.jpg";
+import TeamImg3 from "../../assets/team/3.jpg";
+import TeamImg4 from "../../assets/team/4.jpg";
+import TeamImg5 from "../../assets/team/1.jpg";
+import TeamImg6 from "../../assets/team/1.jpg";
 import { motion } from "framer-motion";
 import { slideUp } from "../../utility/animation";
 
@@ -29,7 +29,7 @@ const Team = () => {
           />
           <p className="text-xl font-semibold text-dark-blue">Akaash Sasiraj</p>
           <p className="text-sm text-dark-blue/80 leading-relaxed">
-            React Native & UI Development
+            Frontend Lead & UIUX Designer
           </p>
         </motion.div>
         <motion.div
@@ -95,11 +95,9 @@ const Team = () => {
             alt="Team Member 5"
             className="w-32 h-32 rounded-full"
           />
-          <p className="text-xl font-semibold text-dark-blue">
-            Namikaze Minato
-          </p>
+          <p className="text-xl font-semibold text-dark-blue">Shahana</p>
           <p className="text-sm text-dark-blue/80 leading-relaxed">
-            Occupational Therapist
+            Frontend Developer
           </p>
         </motion.div>
         <motion.div
@@ -113,9 +111,9 @@ const Team = () => {
             alt="Team Member 6"
             className="w-32 h-32 rounded-full"
           />
-          <p className="text-xl font-semibold text-dark-blue">Kanja Karupu</p>
+          <p className="text-xl font-semibold text-dark-blue">Kerusan </p>
           <p className="text-sm text-dark-blue/80 leading-relaxed">
-            Developmental Therapist
+            UIUX Designer
           </p>
         </motion.div>
       </div>

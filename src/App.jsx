@@ -6,8 +6,9 @@ import Banner from "./components/Banner/Banner";
 import Features from "./components/feature/Features";
 import Banner2 from "./components/Banner/Banner2";
 import ContactUs from "./components/Email/ContactUs";
+import ComingSoon from "./components/Banner/comingSoon";
 import Footer from "./components/Footer/footer";
-import Team from "./components/Team/Team"; // Import Team component
+import Team from "./components/Team/Team";
 
 const SplashScreen = () => {
   const [loadingPercentage, setLoadingPercentage] = useState(0);
@@ -45,7 +46,8 @@ const App = () => {
   const featuresRef = useRef(null);
   const newsRef = useRef(null);
   const contactRef = useRef(null);
-  const teamRef = useRef(null); // Add reference for Team section
+  const teamRef = useRef(null);
+  const comingSoonRef = useRef(null);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -68,7 +70,14 @@ const App = () => {
         <>
           <Navbar
             scrollToSection={scrollToSection}
-            refs={{ homeRef, featuresRef, newsRef, contactRef, teamRef }} // Add teamRef to Navbar
+            refs={{
+              homeRef,
+              featuresRef,
+              newsRef,
+              contactRef,
+              teamRef,
+              comingSoonRef,
+            }}
           />
           <div ref={homeRef} id="home">
             <Home />
@@ -81,7 +90,10 @@ const App = () => {
             <Banner />
           </div>
           <div ref={teamRef} id="team">
-            <Team /> {/* Add Team section here */}
+            <Team />
+          </div>
+          <div ref={comingSoonRef} id="coming-soon">
+            <ComingSoon />
           </div>
           <div ref={contactRef} id="contact">
             <ContactUs />
