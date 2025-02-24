@@ -4,7 +4,7 @@ import TeamImg2 from "../../assets/team/2.jpg";
 import TeamImg3 from "../../assets/team/3.jpg";
 import TeamImg4 from "../../assets/team/4.jpg";
 import TeamImg5 from "../../assets/team/1.jpg";
-import TeamImg6 from "../../assets/team/1.jpg";
+import TeamImg6 from "../../assets/team/5.jpg";
 import { motion } from "framer-motion";
 import { slideUp } from "../../utility/animation";
 
@@ -45,7 +45,7 @@ const Team = () => {
           />
           <p className="text-xl font-semibold text-dark-blue">Rama Raguram</p>
           <p className="text-sm text-dark-blue/80 leading-relaxed">
-            Backend Developer & Database Management
+            Backend Developer & Machine Learning Engineer
           </p>
         </motion.div>
         <motion.div
